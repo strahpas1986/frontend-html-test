@@ -1,0 +1,68 @@
+.sidebar {
+    display: block;
+    width: 300px;
+    box-sizing: border-box;
+    position: relative;
+    &_active {
+        width: 60px;
+    }
+    &__logo {
+        padding: 8px 8px 8px 32px;
+        width: 200px;
+        &_active {
+            padding-left: 32px;
+        }
+    }   
+    &__img {
+        width: 40px;
+        height: 40px;
+    }
+    &__btn {
+        position: absolute;
+        right: 80px;
+        top: 40px; 
+        &_active {
+            position: absolute;
+            right: 250px;
+            top: 40px;
+        }
+    }
+    &__btn_descr {
+        font-size: 12px;
+        &_active {
+            display: none;
+        }
+    }
+    &__container {
+        width: 250px;
+        box-sizing: border-box;
+        &_active {
+            width: 60px;
+        }
+    }
+    &__list {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover,
+        &:active {
+            background-color: #525252;
+            color: white;
+            transition: 1s all;
+        }
+        &_item {
+            padding-left: 15px;
+            
+            &_active {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
